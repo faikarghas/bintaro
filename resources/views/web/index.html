@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,body{
+            margin: 0;
+            padding: 0;
+        }
+        .yt__wrapper{
+            display: flex;
+            padding: 7rem;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .bg_yellow{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #FEB824;
+            width: 45%;
+            height: 400px;
+            z-index: 0;
+        }
+        iframe{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="http://127.0.0.1:5500/resources/views/web/images/negeri_jahe_merah_1.jpg" width="100%" alt="">
+        <div class="yt__wrapper">
+            <iframe width="760" height="415" src="https://www.youtube.com/embed/bMaMvYw2eck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="bg_yellow"></div>
+        </div>
+        <img src="http://127.0.0.1:5500/resources/views/web/images/negeri_jahe_merah_2.jpg" width="100%" alt="">
+        <img src="http://127.0.0.1:5500/resources/views/web/images/negeri_jahe_merah_3.jpg" width="100%" alt="">
+        <img src="http://127.0.0.1:5500/resources/views/web/images/negeri_jahe_merah_4.jpg" width="100%" alt="">
+    </main>
+</body>
+</html>

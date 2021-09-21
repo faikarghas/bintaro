@@ -1,0 +1,120 @@
+main[page=partner]{
+    .section__first{
+        padding: 7rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        .text_wrapper{
+            h2{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                color: #2B5A82;
+                margin-bottom: 4rem;
+                text-align: center;
+                padding: 0 9rem;
+                @include respond(down-tab-port){
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .section__second{
+        padding: 7rem 0;
+        background-color: #E1E1E3;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        &-left,&-right{
+            margin-bottom: 7rem;
+            position: relative;
+            height: 635px;
+            .slick-slider{
+                height: 100%;
+                .slick-list{
+                    height: 100%;
+                    .slick-track{
+                        height: 100%;
+                        .slick-slide>div{
+                            height: 100%;
+                        }
+                    }
+                }
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            @include respond(down-tab-port){
+                height: unset;
+            }
+            @include respond(down-tab-port){
+                margin-bottom: 0rem;
+            }
+        }
+
+        .box_text-right{
+            right: 7rem;
+            @include respond(down-tab-port){
+                margin-bottom: 4rem;
+            }
+        }
+
+        .box_text-left{
+            left: 7rem;
+            @include respond(down-tab-port){
+                margin-bottom: 4rem;
+            }
+        }
+
+        .box_text{
+            background-color: white;
+            position: absolute;
+            top: calc(50% - 4rem);
+            transform: translateY(-50%);
+            width: 45rem;
+            height: 40rem;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 2;
+            @include respond(down-tab-port){
+                width: 100%;
+                position: static;
+                transform: none;
+                top: unset;
+                right: unset;
+            }
+            h3{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2rem;
+                color: #2B5A82;
+                margin-bottom: 2rem;
+            }
+            p{
+
+            }
+        }
+
+        &--text{
+            padding-right: 12rem;
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            p{
+                font-family: "Hind-Regular";
+                color: #29292B;
+            }
+            h3{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                color: #2B5A82;
+            }
+        }
+    }
+}

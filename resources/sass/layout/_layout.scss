@@ -1,0 +1,317 @@
+.menu_mobile{
+    display: none;
+    @include respond(down-tab-port){
+        display: block;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        z-index: 5;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu__logo{
+            img{
+                width: 151px;
+            }
+        }
+    }
+}
+
+.menu_showcase{
+    display: none;
+    @include respond(down-tab-port){
+        position: fixed;
+        top: 77px;
+        left: -100%;
+        width: 100%;
+        background-color: #E1E1E3;
+        height: 100%;
+        padding: 4rem;
+        display: block;
+        z-index: 8;
+        transition: 0.4s all;
+        &.active{
+            left: 0;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                margin-bottom: 2rem;
+                a{
+                    color: #2B5A82;
+                    font-size: 4rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+header{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include respond(down-tab-port){
+        height: 50vh;
+    }
+    .news_banner{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        filter: brightness(0.5);
+        object-fit: cover;
+    }
+    menu{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 8rem 7rem 0 7rem;
+        @include respond (down-tab-port){
+            height: 50vh;
+        }
+        .menu__logo{
+            @include respond (down-tab-port){
+                display: none;
+            }
+            img{
+                object-fit: contain;
+                filter: invert(100%) sepia(48%) saturate(0%) hue-rotate(208deg) brightness(112%) contrast(101%);
+            }
+        }
+        .menu__link{
+            @include respond (down-tab-port){
+                display: none;
+            }
+            ul{
+                padding-left: 0;
+                margin-bottom: 0;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 4rem;
+                    &.active{
+                        border-bottom: 1px solid white;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.8rem;
+                        font-family: "Hind-Regular";
+                    }
+                }
+            }
+        }
+    }
+
+    .caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        h1{
+            color: white;
+            font-size: 5rem;
+            margin-bottom: 0;
+            font-family: "Baskerville-01";
+            @include respond(down-tab-port){
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.section__news{
+    padding-top: 10rem;
+    h2{
+        font-family: "Montserrat-SemiBold";
+        font-size: 2.5rem;
+        color: #2B5A82;
+        margin-bottom: 15rem;
+        text-align: center;
+        padding: 0 7rem;
+        @include respond(down-tab-port){
+            padding: 0 4rem;
+            font-size: 1.8rem;
+            margin-bottom: 8rem;
+        }
+        a{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2.5rem;
+            color: #2B5A82;
+            text-decoration: none;
+        }
+    }
+    &--text{
+        padding: 0 7rem;
+        text-align: end;
+        margin-bottom: 1.5rem;
+        @include respond (down-tab-port){
+            text-align: start;
+            padding: 0 4rem;
+        }
+        h4{
+            font-family: "Hind-Regular";
+            font-size: 1.8rem;
+            color: black;
+            margin-bottom: 0;
+            letter-spacing: 3.2px;
+        }
+    }
+    &--action{
+        padding: 0 7rem;
+        @include respond (down-tab-port){
+            padding: 0 4rem;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+    }
+    &--item{
+        background-color: #2B5A82;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        .hover-blue{
+            background-color: #2B5A82;
+            position: absolute;
+            bottom:0;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s all;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 5rem;
+            width: 100%;
+            height: 100%;
+            p{
+                color: white;
+                font-family: "Montserrat-SemiBold";
+            }
+        }
+        &:hover{
+            .hover-blue{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .news-slider{
+        height: 350px;
+        img{
+            object-fit: cover;
+        }
+        .slick-list{
+            height: 100%;
+            .slick-track{
+                height: 100%;
+                .slick-slide>div{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .info__wrapper{
+        &-contact{
+            background-color: #2B5A82;
+            padding: 7rem;
+            @include respond (down-tab-port){
+                padding: 4rem;
+            }
+            height: 100%;
+            h5{
+                color: white;
+                font-family: "Hind-Regular";
+                font-size: 1.5rem;
+                margin-bottom: 4rem;
+            }
+            h3{
+                color: white;
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                margin-bottom: 2.5rem;
+            }
+            p{
+                color: white;
+                margin-bottom: 8rem;
+                font-family: "Hind-Regular";
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    margin-bottom: 1.5rem;
+                    .fb{
+                        height: 25px;
+                    }
+                    span{
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        margin-right: 2rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                        font-family: "Hind-Regular";
+                    }
+                }
+            }
+        }
+        &-map{
+            height: 100%;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .copyright{
+            padding: 4rem 7rem;
+            @include respond (down-tab-port){
+                padding: 4rem;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include respond(down-tab-port){
+                align-items: unset;
+                flex-direction: column;
+            }
+            img{
+                @include respond(down-tab-port){
+                    margin-bottom: 2rem;
+                }
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 1.1rem;
+                text-align: end;
+                @include respond(down-tab-port){
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

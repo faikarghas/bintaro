@@ -1,0 +1,136 @@
+main[page=contact]{
+    .section__first{
+        padding: 7rem;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        .desc{
+            padding-right: 8rem;
+        }
+        h5{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2rem;
+            color: #2B5A82;
+            margin-bottom: 4rem;
+        }
+        h3{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2.5rem;
+            color: #2B5A82;
+            margin-bottom: 4rem;
+        }
+        p{
+            font-family: "Hind-Regular";
+            margin-bottom: 8rem;
+        }
+        ul{
+            padding-left: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                a{
+                    font-size: 2rem;
+                    color: #2B5A82;
+                    font-family: "Hind-Regular";
+                    text-decoration: none;
+                    margin-bottom: 0;
+                    line-height: 1em;
+                }
+                span{
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+
+        .form_wrapper{
+            @include respond(down-tab-port){
+                margin-top: 5rem;
+            }
+            form{
+                select{
+                    background-color: #2B5A82;
+                    color: white;
+                    border:none;
+                    box-shadow: none;
+                    font-size: 1.6rem;
+                    padding-left: 2rem;
+                    @include respond(down-tab-port){
+                        padding-left: 1rem;
+                        font-size: 1.8rem;
+                    }
+                    option{
+                        background-color: #CACECF;
+                        color: black;
+                        font-size: 1.6rem;
+                    }
+                }
+                label{
+                    font-family: "Montserrat-SemiBold";
+                    font-size: 1.6rem;
+                    color: #2B5A82;
+                }
+                input{
+                    border:none;
+                    border-bottom: 2px solid #2B5A82;
+                }
+                .form-select{
+                    background-image: url('https://www.bintarojaya.id/bintaro-new/images/svg/white-arrow-down.svg')
+                }
+                .form-item{
+                    padding: 0 2rem;
+                    @include respond(down-tab-port){
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        margin-left: 0 !important;
+                        margin-right: 0 !important;
+                    }
+                }
+                .form-item-textarea{
+                    label{
+                        padding-left: 2rem;
+                        margin-bottom: 1.5rem;
+                        @include respond(down-tab-port){
+                            padding-left: 1rem;
+                        }
+                    }
+                    textarea{
+                        padding-left: 2rem;
+                        background-color: #2B5A82;
+                        color: #9AA9B4;
+                        font-size: 1.6rem;
+                        @include respond(down-tab-port){
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+                .btn-custom-binjay{
+                    background-color: white;
+                    color: #2B5A82;
+                    font-size: 2rem;
+                    border-bottom: 2px solid #2B5A82;
+                    padding: 0rem 0;
+                    font-family: "Hind-Regular";
+                    line-height: 1em;
+                }
+                .btn-action{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    .custom-file{
+                        margin-right: 5rem;
+                        label{
+                            font-family: "Hind-Regular";
+                            color: black;
+                            font-size: 2rem;
+                            line-height: 1em;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+

@@ -1,0 +1,182 @@
+main[page=about]{
+    .section__text{
+        padding: 7rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        .text_wrapper{
+            h2{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                color: #2B5A82;
+                text-align: center;
+                padding: 0 9rem;
+                @include respond(down-tab-port){
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .section__first{
+        padding: 7rem;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        h2{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2.5rem;
+            color: #2B5A82;
+            margin-bottom: 4rem;
+        }
+        p{
+            font-family: "Hind-Regular";
+            color: black;
+        }
+        .text_wrapper{
+            padding-left: 8rem;
+        }
+    }
+    .section__second{
+        padding: 7rem;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        &--text{
+            padding-right: 12rem;
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            @include respond(down-tab-port){
+                padding-bottom: 8rem;
+                padding-right: 0rem;
+            }
+
+            p{
+                font-family: "Hind-Regular";
+                color: black;
+            }
+            .blue-text{
+                color: #2B5A82;
+            }
+            h3{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                color: #2B5A82;
+            }
+            h2{
+                font-family: "Montserrat-SemiBold";
+                font-size: 2.5rem;
+                color: #2B5A82;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    .section__third{
+        padding: 7rem;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        h2{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2.5rem;
+            color: #2B5A82;
+            margin-bottom: 4rem;
+        }
+        p{
+            font-family: "Hind-Regular";
+            color: black;
+        }
+        .text_wrapper{
+            padding-left: 8rem;
+        }
+    }
+}
+
+main[page=living]{
+    .section__first{
+        padding: 7rem;
+        @include respond (down-tab-port){
+            padding: 4rem;
+        }
+        h2{
+            font-family: "Montserrat-SemiBold";
+            font-size: 2.5rem;
+            color: #2B5A82;
+            margin-bottom: 4rem;
+            @include respond(down-tab-port){
+                font-size: 1.5rem;
+            }
+        }
+        img{
+            @include respond(down-tab-port){
+                width: 100%;
+            }
+        }
+        p{
+            font-family: "Hind-Regular";
+            color: black;
+        }
+    }
+    .section__second{
+        padding: 4rem;
+        .living__item{
+            @include respond(down-tab-port){
+                margin-bottom: 4rem;
+            }
+            &-img{
+                height: 500px;
+                padding: 4rem;
+                @include respond(down-tab-port){
+                    padding: 0;
+                    height: 350px;
+                    margin-bottom: 4rem;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    @include respond(down-tab-port){
+                        object-fit: contain;
+                        height: 350px;
+                    }
+                }
+            }
+            &-title{
+                padding: 0 4rem;
+                .text-blue{
+                    color: #386384;
+                }
+                p{
+                    font-size: 1.6rem;
+                    color: black;
+                }
+            }
+            &-content{
+                padding: 0 4rem;
+            }
+        }
+        .living__item2{
+            padding: 4rem;
+            @include respond(down-tab-port){
+                padding: 0;
+            }
+            &-title{
+                .text-blue{
+                    color: #386384;
+                }
+                p{
+                    font-size: 1.6rem;
+                    color: black;
+                }
+            }
+            &-content{
+            }
+        }
+    }
+}
+
