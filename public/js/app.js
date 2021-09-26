@@ -1908,9 +1908,32 @@ $(document).ready(function () {
     nextArrow: $('.partner1-next')
   }); ///////////////////////
 
+  for (var _i2 = 0; _i2 < 4; _i2++) {
+    $('.dts-partner2').append("<div class=\"dots_custom-item dts-partner2-item\" style=\"width:".concat(item_percentage3, "%\"></div>"));
+  }
+
+  $(".partner2-slider").on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var idx = currentSlide == undefined ? 0 : currentSlide;
+    $('.dts-partner2-item').each(function (params) {
+      if ($(this).index() === idx) {
+        $(this).addClass('active');
+        $('.dts-partner2-item').not($(this)).removeClass('active');
+      }
+    });
+  });
+  $('.partner2-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: $('.partner2-prev'),
+    nextArrow: $('.partner2-next')
+  }); ///////////////////////
+
   var item_percentagep3 = 100 / 4;
 
-  for (var _i2 = 0; _i2 < 4; _i2++) {
+  for (var _i3 = 0; _i3 < 4; _i3++) {
     $('.dts-partner3').append("<div class=\"dots_custom-item dts-partner3-item\" style=\"width:".concat(item_percentagep3, "%\"></div>"));
   }
 
@@ -1935,7 +1958,7 @@ $(document).ready(function () {
 
   var item_percentagep5 = 100 / 4;
 
-  for (var _i3 = 0; _i3 < 4; _i3++) {
+  for (var _i4 = 0; _i4 < 4; _i4++) {
     $('.dts-partner5').append("<div class=\"dots_custom-item dts-partner5-item\" style=\"width:".concat(item_percentagep5, "%\"></div>"));
   }
 
@@ -1960,7 +1983,7 @@ $(document).ready(function () {
 
   var item_percentagepromo = 100 / 1;
 
-  for (var _i4 = 0; _i4 < 3; _i4++) {
+  for (var _i5 = 0; _i5 < 3; _i5++) {
     $('.dts-promo').append("<div class=\"dots_custom-item dts-promo-item\" style=\"width:".concat(item_percentagepromo, "%\"></div>"));
   }
 
@@ -1985,15 +2008,15 @@ $(document).ready(function () {
 
   }); // EXPERIENCES
 
-  for (var _i5 = 0; _i5 < 10; _i5++) {
-    $(".expDetail-slider".concat(_i5)).slick({
+  for (var _i6 = 0; _i6 < 10; _i6++) {
+    $(".expDetail-slider".concat(_i6)).slick({
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       dots: false,
-      prevArrow: $(".expDetail".concat(_i5, "-prev")),
-      nextArrow: $(".expDetail".concat(_i5, "-next"))
+      prevArrow: $(".expDetail".concat(_i6, "-prev")),
+      nextArrow: $(".expDetail".concat(_i6, "-next"))
     });
   } // PRODUCT
 
@@ -2015,7 +2038,7 @@ $(document).ready(function () {
   // MOBILE HARUS DIGANTI
   // RSEDENTIAL
 
-  for (var _i6 = 0; _i6 < 2; _i6++) {
+  for (var _i7 = 0; _i7 < 2; _i7++) {
     $('.dts-categoryProduct1').append("<div class=\"dots_custom-item dts-categoryProduct1-item\" style=\"width:".concat(item_percentagepromo, "%\"></div>"));
   }
 
@@ -2052,7 +2075,7 @@ $(document).ready(function () {
     }]
   }); // COMMERCIAL
 
-  for (var _i7 = 0; _i7 < 2; _i7++) {
+  for (var _i8 = 0; _i8 < 2; _i8++) {
     $('.dts-categoryProduct2').append("<div class=\"dots_custom-item dts-categoryProduct2-item\" style=\"width:".concat(item_percentagepromo, "%\"></div>"));
   }
 

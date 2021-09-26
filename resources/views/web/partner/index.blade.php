@@ -83,7 +83,12 @@
                     </div>
                     <div class="col-12 col-lg-9 order-1 order-lg-2">
                         <div class="section__second-right">
-                            <img src="{{asset('images/pict10.jpg')}}" width="100%" alt="">
+                            <div class="partner2-slider">
+                                <img src="{{asset('images/pict10.jpg')}}" width="100%" alt="">
+                                <img src="{{asset('images/partners/financial/bank-permata.jpg')}}" width="100%" alt="">
+                                <img src="{{asset('images/partners/financial/bank-cimb-niaga.jpg')}}" width="100%" alt="">
+                                <img src="{{asset('images/partners/financial/mandiri.jpg')}}" width="100%" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,6 +102,8 @@
                                 <img src="{{asset('images/partners/automotive/automotive3.jpg')}}" width="100%" alt="">
                                 <img src="{{asset('images/partners/automotive/automotive4.jpg')}}" width="100%" alt="">
                                 <img src="{{asset('images/partners/automotive/Automotive5.jpg')}}" width="100%" alt="">
+                                <img src="{{asset('images/partners/automotive/BMW.jpg')}}" width="100%" alt="">
+                                <img src="{{asset('images/partners/automotive/Renault.jpg')}}" width="100%" alt="">
                             </div>
                         </div>
                     </div>

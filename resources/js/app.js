@@ -74,6 +74,31 @@ $('.partner1-slider').slick({
     nextArrow: $('.partner1-next')
 });
 ///////////////////////
+
+for (let i = 0; i < 4; i++) {
+    $('.dts-partner2').append(`<div class="dots_custom-item dts-partner2-item" style="width:${item_percentage3}%"></div>`)
+}
+
+$(".partner2-slider").on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    let idx = currentSlide == undefined ? 0 : currentSlide
+    $('.dts-partner2-item').each(function (params) {
+        if($(this).index() === idx){
+            $(this).addClass('active')
+            $('.dts-partner2-item').not($(this)).removeClass('active');
+        }
+    })
+});
+
+$('.partner2-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:true,
+    dots:false,
+    prevArrow: $('.partner2-prev'),
+    nextArrow: $('.partner2-next')
+});
+///////////////////////
 let item_percentagep3 = 100 / 4
 
 for (let i = 0; i < 4; i++) {
