@@ -31,7 +31,7 @@
                             {{-- <h3>Lorem Ipsum Dolor Sit Amet</h3> --}}
                             <p>Silakan hubungi kami dengan mengisi form kontak berikut atau email kami langsung melalui:</p>
 
-                            <ul><li><span><img src="{{asset('/images/mail.png')}}" alt=""></span><a href="">bintarojaya@gmail.com</a></li></ul>
+                            <ul><li><span><img src="{{asset('/images/mail.png')}}" alt=""></span><a href="">contactus@bintarojaya.id</a></li></ul>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
